@@ -27,13 +27,13 @@ class SocialCountWP {
 
 	static function add_scripts() 
     {
-		wp_enqueue_script( 'socialcountwp-main-script',  self::get_url( 'dist/socialcount.js' ), array( 'jquery', 'jquery-sonar' ), self::version, true );
+		wp_enqueue_script( 'socialcountwp-main-script',  self::get_url( 'dist/socialcount.min.js' ), array( 'jquery', 'jquery-sonar' ), self::version, true );
 	}
     
     static function add_styles() 
     {
-		wp_enqueue_style( 'socialcountwp-main-style',  self::get_url( 'dist/socialcount.css' ), array(), self::version, 'all' );
-        wp_enqueue_style( 'socialcountwp-icon-style',  self::get_url( 'dist/socialcount-icons.css' ), array(), self::version, 'all' );
+		wp_enqueue_style( 'socialcountwp-main-style',  self::get_url( 'dist/socialcount.min.css' ), array(), self::version, 'all' );
+        wp_enqueue_style( 'socialcountwp-icon-style',  self::get_url( 'dist/socialcount-icons.min.css' ), array(), self::version, 'all' );
 
 	}
 
